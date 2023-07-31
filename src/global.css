@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(20, 20, 20);
+  }
+
+
+.phone-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 375px; 
+    height: 700px; 
+    transform: translate(-50%, -50%);
+    background-color: white;
+    overflow-y:auto;
+  }
