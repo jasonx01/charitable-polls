@@ -8,11 +8,11 @@ import { Route, Routes, Link } from 'react-router-dom'
 function App() {
   return (
     <div className='phone-screen'>
-      <ul>
+      {/* <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/search">Search</Link></li>
         <li><Link to="/charity">Charity</Link></li>
-      </ul>
+      </ul> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/search" element={<Search />}></Route>
