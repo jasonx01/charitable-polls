@@ -1,0 +1,62 @@
+.Poll {
+  text-align: left;
+}
+
+.question-card {
+  margin: auto;
+
+  /* Dimensions  */
+  width: 80%; /* Can be in percentage also. */
+  height: auto;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+ ul {
+  list-style: none;
+}
+
+ li {
+  margin-top: 8px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+ .question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+/* Final Results  */
+
+button {
+  background-color: green; /* Green */
+  border: none;
+  color: black;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 24px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* take full height */
+}
+
+.selected {
+  background-color: green;
+  color: white;
+}

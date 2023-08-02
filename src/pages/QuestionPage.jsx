@@ -1,94 +1,80 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import "./questions.css";
 
-// Render each choice
-const Choice = ({ choice, index, questionId, handleChoiceChange }) => (
-  <div key={index} className="choice">
-    <input 
-    type="radio"
-      id={`${questionId}${index}`}
-      name={questionId}
-      value={choice}
-      onChange={() => handleChoiceChange(questionId, choice)}
-    />
-    <label htmlFor={`${questionId}${index}`} style={{ marginLeft: '5px' }}>{choice}</label>
-  </div>
-);
+function Poll() {
+  const [showResults, setShowResults] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [questions, setQuestions] = useState([]);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [responses, setResponses] = useState([]);
 
-// Render each question
-const Question = ({ question, handleChoiceChange }) => (
-  <div key={question.id} className="question">
-    <h3>{question.text}</h3>
-    {question.choices.map((choice, index) => (
-      <Choice
-        choice={choice}
-        index={index}
-        questionId={question.id}
-        handleChoiceChange={handleChoiceChange}
-      />
-    ))}
-  </div>
-);
+  useEffect(() => {
+    fetch('/questions.json')
+      .then(response => response.json())
+      .then(data => setQuestions(data))
+      .catch((error) => console.error("Error fetching questions:", error));
+  }, []);
 
-// Question component
-const Poll = () => {
-  const [answers, setAnswers] = useState({});
-
-  const questions = [
-    { 
-      id: 'q1',
-      text: 'Question 1',
-      choices: ['A', 'B', 'C', 'D'],
-    },
-    { 
-      id: 'q2',
-      text: 'Question 2',
-      choices: ['A', 'B', 'C', 'D'],
-    },
-    { 
-      id: 'q3',
-      text: 'Question 3',
-      choices: ['A', 'B', 'C', 'D'],
-    },
-    { 
-      id: 'q4',
-      text: 'Question 4',
-      choices: ['A', 'B', 'C', 'D'],
-    },
-    { 
-      id: 'q5',
-      text: 'Question 5',
-      choices: ['A', 'B', 'C', 'D'],
-    },
-    { 
-      id: 'q6',
-      text: 'Question 6',
-      choices: ['A', 'B', 'C', 'D'],
-    },
-  ];
-
-  const handleChoiceChange = (questionId, choice) => {
-    setAnswers({
-      ...answers,
-      [questionId]: choice,
-    });
+  const submitAnswer = () => {
+    if (selectedOption) {
+      setResponses([...responses, selectedOption.text]);
+      if (selectedOption.isCorrect) {
+        setScore(score + 1);
+      }
+      if (currentQuestion + 1 < 10) {
+        setCurrentQuestion(currentQuestion + 1);
+        setSelectedOption(null);
+      } else {
+        setShowResults(true);
+        /* downloadResponses(); */
+      }
+    }
   };
 
-    // Export to txt
-  const handleSubmit = () => {
-    /* */
+  /*
+  const downloadResponses = () => {
+    const element = document.createElement("a");
+    const file = new Blob([responses.join("\n")], {type: 'text/plain'});
+    element.href = URL.createObjectURL(file);
+    element.download = "responses.txt";
+    document.body.appendChild(element);
+    element.click();
   };
+  */
 
   return (
-    <div className="poll-container">
-      <h2 className="company-name">Company: </h2>
-      {questions.map((question) => (
-        <Question
-          question={question}
-          handleChoiceChange={handleChoiceChange}
-        />
-      ))}
-      <div style={{ height: '20px' }} />
-      <button onClick={handleSubmit} className="submit-button">Submit</button>
+    <div className="Poll">
+      {showResults ? (
+        <div style={{ textAlign: 'center' }}>
+          <h2>Thank you for completing the survey!</h2>
+        </div>
+      ) : (
+        <>
+          <h2>
+            Question: {currentQuestion + 1} out of {10}
+          </h2>
+          <h3 className="question-text">{questions[currentQuestion]?.text}</h3>
+          <p>
+            <h2>Company: {questions[currentQuestion]?.company}
+            </h2>
+            </p>  
+          <ul>
+            {questions[currentQuestion]?.options.map((option) => {
+              return (
+                <li
+                  key={option.id}
+                  className={selectedOption === option ? "selected" : ""}
+                  onClick={() => setSelectedOption(option)}
+                >
+                  {option.text}
+                </li>
+              );
+            })}
+          </ul>
+          <button onClick={submitAnswer}>Submit</button>
+          </>
+      )}
     </div>
   );
 };
