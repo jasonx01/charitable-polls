@@ -12,7 +12,7 @@ export default function Home() {
         </p>
         <div className='charity-boxes-container'>
             <p className='charity-box'>
-                
+
             </p>
         </div>
     </div>
