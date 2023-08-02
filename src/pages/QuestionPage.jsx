@@ -27,7 +27,6 @@ function Poll() {
         setSelectedOption(null);
       } else {
         setShowResults(true);
-        /* downloadResponses(); */
       }
     }
   };
