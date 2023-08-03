@@ -28,6 +28,35 @@
   border-radius: 20px;
   font-size: 20px;
 }
+
+/* .navbar {
+  position: relative;
+  height: 300px;
+  background: lightgray;
+} */
+
+/* .navbar ul {
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* background:red; */
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.navbar li Link {
+  display: block;
+  padding: 10px;
+  background: lightgreen;
+  border: 1px solid green;
+  text-decoration: none;
+} */
+
  .question-text {
   color: darkblue;
   font-size: 24px;
