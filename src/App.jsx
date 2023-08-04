@@ -14,15 +14,15 @@ function App() {
   return (
     <div className='phone-screen'>
       <Routes>
-        <Route path="/" element={<Home iguanaImage={Iguana}/>}></Route>
+        <Route path="/" element={<Home iguanaImage={Iguana} poll={Poll}/>}></Route>
         <Route path="/search" element={<Search />}></Route>
         {/* <Route path="/charity" element={<Charity />}></Route> */}
         <Route path="/poll" element={<Poll />}></Route>
       </Routes>
       <div class="nav">
-        <Link to="/"><button><span className="gg-home"></span ></button></Link>
-        <Link to="/search"><button><span className="gg-search"></span></button></Link>
-        <Link to="/poll"><button><span className="gg-clipboard"></span></button></Link>
+        <Link to="/"><button className='navbutton'><span className="gg-home"></span ></button></Link>
+        <Link to="/search"><button className='navbutton'><span className="gg-search"></span></button></Link>
+        <Link to="/poll"><button className='navbutton'><span className="gg-clipboard"></span></button></Link>
       </div>
     </div>
   )

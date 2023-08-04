@@ -49,3 +49,18 @@ img {
   align-items: center;
   
 }
+
+.start {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.navbutton {
+  background-color: rgb(20,20,20); /* Green */
+  border: none;
+  color: black;
+  padding: 16px;
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
