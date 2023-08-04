@@ -46,7 +46,7 @@ function Poll() {
     <div className="Poll">
       {showResults ? (
         <div style={{ textAlign: 'center' }}>
-          <h2>Thank you for completing the survey!</h2>
+          <h2>Done with all the questions today!</h2>
         </div>
       ) : (
         <>
@@ -71,7 +71,7 @@ function Poll() {
               );
             })}
           </ul>
-          <button onClick={submitAnswer}>Submit</button>
+          <button className='submit' onClick={submitAnswer} style={{margin: '10px'}}>Submit</button>
           </>
       )}
     </div>
