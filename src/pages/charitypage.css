@@ -1,0 +1,11 @@
+.feed {height:125px; width:88%; border: 3px solid rgb(0, 0, 0);}
+.feed {overflow:hidden; overflow-y:scroll;}
+.tweet {
+    margin-top: 10px;
+    background-color: cyan;
+    padding: 7px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: px;
+    font-size: 12px;
+    text-align: center;
+  }
