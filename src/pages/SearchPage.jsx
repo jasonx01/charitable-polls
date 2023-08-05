@@ -38,8 +38,8 @@ export default function Search() {
 }
 
 function CharityListItem({ Charity }) {
-    return <div className='tweet' style={{ backgroundColor: 'light=green' }}>
+    return <div className='tweet' style={{ backgroundColor: 'white'}}>
         <h1>{Charity.charity_name}</h1>
-        <img src={Charity.imglink}></img>
+        <img src={Charity.imglink} style={{ width: '80%' }}></img>
     </div>
 }
