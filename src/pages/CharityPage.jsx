@@ -40,6 +40,10 @@ export default function Search({iguanaImage}) {
             </button>
         </div>
 
+        <div className='raffles'>
+            
+        </div>
+
         <div style={{bottom:'40px', position: 'absolute'}}>
             <h2>
                 Feed
