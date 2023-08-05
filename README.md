@@ -1,8 +1,8 @@
-# React + Vite
+# Charitable Polls: The app that makes giving back easy and fun!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Whether you are passionate about the environment, education, health, or human rights, Charitable Polls connects you with charities that align with your vision and values!*
 
-Currently, two official plugins are available:
+Charitable Polls is an innovative app that empowers users with the ability to support their favorite charities by completing surveys. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Charitable Polls enables users to discover and donate to causes that they care about, just by answering simple and fun questions. Charitable Polls is powered by React, a state-of-the-art technology that provides a fast and smooth user experience. 
+
