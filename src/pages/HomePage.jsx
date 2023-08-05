@@ -18,6 +18,7 @@ export default function Home({iguanaImage, STCImg}) {
             <p>
                 <button className='charity-box'><img src={STCImg} alt='STC'></img></button>
             </p>
+            
         </div>
     </div>
     )

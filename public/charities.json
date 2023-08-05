@@ -1,15 +1,15 @@
 [
     {
         "charity_name": "Blue Iguana Guardians",
-        "link": "./pages/CharityPage.jsx",
-        "imglink": "./images/iguana.png"
+        "link": "/src/pages/CharityPage.jsx",
+        "imglink": "/src/images/iguana.png"
     },
     {
         "charity_name": "Save the Children",
-        "imglink": "./images/savethechildren.png"  
+        "imglink": "/src/images/savethechildren.png"  
     },
     {
         "charity_name": "Action against hunger",
-        "imglink": "./images/actionagainsthunger.png"  
+        "imglink": "/src/images/actionagainsthunger.png"  
     }
 ]
