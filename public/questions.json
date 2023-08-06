@@ -25,7 +25,7 @@
       { "id": 0,"text": "a) Durability/Longevity"},
       { "id": 1,"text": "b) Functionality/Usability"},
       { "id": 2,"text": "c) Aesthetics/Design"},
-      {"id": 3,"text": "d) Brand reputation/Trustworthiness"},
+      {"id": 3,"text": "d) Brand reputation/Trust"},
       { "id": 4,"text": "e) Price/Cost-effectiveness"}
     ]
   },
@@ -117,7 +117,7 @@
       { "id": 1,"text": "b) Likely"},
       { "id": 2,"text": "c) Neutral"},
       { "id": 3,"text": "d) Unlikely"},
-      { "id": 3,"text": "d) Very Unlikely"}
+      { "id": 3,"text": "e) Very Unlikely"}
     ]
   },
   {
