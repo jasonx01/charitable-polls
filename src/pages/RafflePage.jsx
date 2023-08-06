@@ -1,7 +1,9 @@
+import Coin from '../images/coin.png'
+
 export default function Raffles() {
     return (
     <h1>
-        Hi
+        Blue Iguana Guardians
     </h1>
     )
 }

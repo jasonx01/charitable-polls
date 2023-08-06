@@ -5,11 +5,7 @@
         "imglink": "/src/images/iguana.png"
     },
     {
-        "charity_name": "Save the Children",
-        "imglink": "/src/images/savethechildren.png"  
-    },
-    {
-        "charity_name": "Action against hunger",
-        "imglink": "/src/images/actionagainsthunger.png"  
+        "charity_name": "For The Kids",
+        "imglink": "/src/images/forthekids.png"
     }
 ]

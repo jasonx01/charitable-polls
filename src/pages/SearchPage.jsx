@@ -4,13 +4,6 @@ export default function Search() {
     const [query, setQuery] = useState("");
     const [charities, setCharities] = useState([]);
 
-    // const charities = [
-    //     "St. Jude Children's Hospital",
-    //     "Make a Wish",
-    //     "Pablo",
-    //     "Obama Trust Fund"
-    // ]
-
     useEffect(() => {
         fetch('/charities.json')
             .then(response => response.json())

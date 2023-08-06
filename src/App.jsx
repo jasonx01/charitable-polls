@@ -10,8 +10,11 @@ import './pages/Icons.css'
 
 import { Route, Routes, Link } from 'react-router-dom'
 import Iguana from './images/iguana.png'
-import STC from './images/savethechildren.png'
+import STC from './images/forthekids.png'
 
+/*
+  ./images/iguana.png, picture taken by Andrew Kathriner
+*/
 function App() {
   return (
     <div className='phone-screen'>
