@@ -1,111 +1,204 @@
 [
-    {
-      "text": "How familiar are you with Lockheed Martin?",
-      "company" : "Lockheed Martin",
-      "options": [
-        { "id": 0, "text": "a) Very familiar"},
-        { "id": 1, "text": "b) Somewhat familiar"},
-        { "id": 2, "text": "c) Not familiar at all"}
-      ]
-    },
-    {
-      "text": "Which of the following Lockheed Martin products or services are you most aware of?",
-      "company" : "Lockheed Martin",
-      "options": [
-        { "id": 0, "text": "a) Aeronautics (e.g., aircraft, drones)"},
-        { "id": 1, "text": "b) Space (e.g., satellites, space exploration)"},
-        { "id": 2, "text": "c) Defense (e.g., military technology, weapons systems)"},
-        { "id": 3, "text": "d) Cybersecurity (e.g., information security solutions)"}
-      ]
-    },
-    {
-      "text": "Do you approve of Lockheed Martin's activities?",
-      "company" : "Lockheed Martin",
-      "options": [
-        { "id": 0, "text": "Yes, I approve"},
-        { "id": 1, "text": "No, I do not approve"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    },
-    {
-      "text": "Question about the company",
-      "company" : "name",
-      "options": [
-        { "id": 0, "text": "A"},
-        { "id": 1, "text": "B"},
-        { "id": 2, "text": "C"},
-        { "id": 3, "text": "D"}
-      ]
-    }
-    
+  {
+    "text": "What's your overall satisfaction with products/services from this company?",
+    "options": [
+      { "id": 0,"text": "a) Very satisfied"},
+      { "id": 1,"text": "b) Somewhat satisfied"},
+      { "id": 2,"text": "c) Neutral/Never heard of it"},
+      { "id": 3,"text": "d) Somewhat dissatisfied"},
+      { "id": 4,"text": "e) Very dissatisfied"}
+    ]
+  },
+  {
+    "text": "What is your frequency of purchase from this company?",
+    "options": [
+      { "id": 0,"text": "a) Never"},
+      { "id": 1,"text": "b) Rarely"},
+      { "id": 2,"text": "c) Occassionally"},
+      { "id": 3,"text": "d) Often"},
+      { "id": 4,"text": "e) Very Often"}
+    ]
+  },
+  {
+    "text": "Which aspects do you value the most in a product from this company?",
+    "options": [
+      { "id": 0,"text": "a) Durability/Longevity"},
+      { "id": 1,"text": "b) Functionality/Usability"},
+      { "id": 2,"text": "c) Aesthetics/Design"},
+      {"id": 3,"text": "d) Brand reputation/Trustworthiness"},
+      { "id": 4,"text": "e) Price/Cost-effectiveness"}
+    ]
+  },
+  {
+    "text": "What's your opinion of this company?",
+    "options": [
+      { "id": 0,"text": "a) Much better than competitors"},
+      { "id": 1,"text": "b) Better than competitors"},
+      { "id": 2,"text": "c) About the same/Never heard of it"},
+      { "id": 3,"text": "d) Worse than competitors"},
+      { "id": 4,"text": "e) Much worse than competitors"}
+    ]
+  },
+  {
+    "text": "Where do you typically buy products/services of this company?",
+    "options": [
+      { "id": 0,"text": "a) In-store/Physical location"},
+      { "id": 1,"text": "b) Online from our official website"},
+      { "id": 2,"text": "c) Online from third-party resellers"},
+      { "id": 3,"text": "d) Never bought from this company"},
+      { "id": 4,"text": "e) Other"}
+    ]
+  },
+  {
+    "text": "How do you usually find out a company's products/services?",
+    "options": [
+      { "id": 0,"text": "a) Email newsletter"},
+      { "id": 1,"text": "b) Social media"},
+      { "id": 2,"text": "c) Influencers"},
+      { "id": 3,"text": "d) In-store advertising"},
+      { "id": 4,"text": "d) Word of mouth"}
+    ]
+  },
+  {
+    "text": "Importance of this company's eco-friendly practices?",
+    "options": [
+      { "id": 0,"text": "a) Very important"},
+      { "id": 1,"text": "b) Somewhat important"},
+      { "id": 2,"text": "c) Neutral"},
+      { "id": 3,"text": "d) Somewhat unimportant"},
+      { "id": 4,"text": "e) Not important at all"}
+    ]
+  },
+  {
+    "text": "Primary benefit you prefer to receive from your purchases from this company?",
+    "options": [
+      { "id": 0,"text": "a) Time-saving"},
+      { "id": 1,"text": "b) Cost-saving"},
+      { "id": 2,"text": "c) Quality improvement"},
+      { "id": 3,"text": "d) Enhanced features"},
+      { "id": 4,"text": "e) Never bought from this company"}
+    ]
+  },
+  {
+    "text": "Which aspect of this company's customer service would you like to see improved the most?",
+    "options": [
+      { "id": 0,"text": "a) Response time to inquiries"},
+      { "id": 1,"text": "b) Friendliness and helpfulness of representatives "},
+      { "id": 2,"text": "c) Knowledge and expertise of representatives"},
+      { "id": 3,"text": "d) Handling of complaints and issues"},
+      { "id": 4,"text": "e) Never interacted with customer service"}
+    ]
+  },
+  {
+    "text": "How likely are you to repurchase from this company in the future?",
+    "options": [
+      { "id": 0,"text": "a) Very likely"},
+      { "id": 1,"text": "b) Likely"},
+      { "id": 2,"text": "c) Neutral/Never bought from it"},
+      { "id": 3,"text": "d) Unlikely"},
+      { "id": 4,"text": "e) Very unlikely"}
+    ]
+  },
+  {
+    "text": "How likely are you to engage with this company on social media platforms",
+    "options": [
+      { "id": 0,"text": "a) Very likely"},
+      { "id": 1,"text": "b) Likely"},
+      { "id": 2,"text": "c) Neutral"},
+      { "id": 3,"text": "d) Unlikely"},
+      { "id": 4,"text": "e) I do not use any"}
+      
+    ]
+  },
+  {
+    "text": "How likely are you to refer a friend or colleague to this company?",
+    "options": [
+      { "id": 0,"text": "a) Very likely"},
+      { "id": 1,"text": "b) Likely"},
+      { "id": 2,"text": "c) Neutral"},
+      { "id": 3,"text": "d) Unlikely"},
+      { "id": 3,"text": "d) Very Unlikely"}
+    ]
+  },
+  {
+    "text": "How likely are you to attend events or promotions organized by this company?",
+    "options": [
+      { "id": 0,"text": "a) Very likely"},
+      { "id": 1,"text": "b) Likely"},
+      { "id": 2,"text": "c) Neutral"},
+      { "id": 3,"text": "d) Unlikely"},
+      { "id": 4,"text": "e) Very unlikely"}
+    ]
+  },
+  {
+    "text": "How well do you feel this company understands the needs of your specific demographic?",
+    "options": [
+      { "id": 0,"text": "a) Very well"},
+      { "id": 1,"text": "b) Well"},
+      { "id": 2,"text": "c) Moderately"},
+      { "id": 3,"text": "d) Poorly"},
+      { "id": 4,"text": "e) Not applicable"}
+    ]
+  },
+  {
+    "text": "Availability of this company's products/services both online and in physical stores?",
+    "options": [
+      { "id": 0,"text": "a) Excellent"},
+      { "id": 1,"text": "b) Good"},
+      { "id": 2,"text": "c) Fair"},
+      { "id": 3,"text": "d) Poor"},
+      { "id": 4,"text": "e) Never bought from this company"}
+    ]
+  },
+  {
+    "text": "How often do you engage with user-generated content or reviews related to this company?",
+    "options": [
+      { "id": 0,"text": "a) Very frequently"},
+      { "id": 1,"text": "b) Occasionally"},
+      { "id": 2,"text": "c) Rarely"},
+      { "id": 3,"text": "d) Never"},
+      { "id": 4,"text": "e) I was unaware of user-generated content/reviews"}
+    ]
+  },
+  {
+    "text": "Primary reason you would choose to this company over a competitor with similar products/services?",
+    "options": [
+      { "id": 0,"text": "a) Better availability"},
+      { "id": 1,"text": "b) Stronger brand reputation and trust"},
+      { "id": 2,"text": "c) More competitive pricing"},
+      { "id": 3,"text": "d) Unique product/service offerings"},
+      { "id": 4,"text": "e) I prefer a competitor"}
+    ]
+  },
+  {
+    "text": "How well does this company address concerns related to data privacy and security?",
+    "options": [
+      { "id": 0,"text": "a) Very well"},
+      { "id": 1,"text": "b) Well"},
+      { "id": 2,"text": "c) Moderately"},
+      { "id": 3,"text": "d) Poorly"},
+      { "id": 4,"text": "e) I'm unaware of the company's data privacy practices"}
+    ]
+  },
+  {
+    "text": "How do you feel about online ads that are tailored to your interests and browsing behavior?",
+    "options": [
+      { "id": 0,"text": "a) I find them helpful"},
+      { "id": 1,"text": "b) I have mixed feelings"},
+      { "id": 2,"text": "c) Neutral"},
+      { "id": 3,"text": "d) I'm uncomfortable"},
+      { "id": 4,"text": "e) I strongly dislike them"}
+    ]
+  },
+  {
+    "text": "Which ad format do you find the most engaging and memorable?",
+    "options": [
+      { "id": 0,"text": "a) Video ads"},
+      { "id": 1,"text": "b) Interactive ads"},
+      { "id": 2,"text": "c) Display/banner ads"},
+      { "id": 3,"text": "d) Native ads (integrated into content)"},
+      { "id": 4,"text": "e) I find none of these ad formats engaging or memorable"}
+    ]
+  }
 ]   
 
