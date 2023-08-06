@@ -21,12 +21,12 @@ export default function Search({iguanaImage}) {
         </div>
 
         <div>
-            <p style={{margin:'10px'}}>
+            <p style={{margin:'10px', fontSize:'14px'}}>
                 The "Blue Iguana Guardians" is a dedicated conservation group established to protect and preserve the critically endangered blue iguana (Cyclura lewisi) species. With the aim of ensuring the long-term survival of this magnificent reptile, the group operates under a strong commitment to research, conservation efforts, education, and community engagement.
             </p>
         </div>
 
-        <div>
+        <div style={{margin:'30px', fontSize:'14px'}}>
             <button>
                 Follow
             </button>

@@ -14,10 +14,10 @@ export default function Home({iguanaImage, STCImg}) {
             <p>
                 <Link to="/charitypage"><button className='charity-box'><img src={iguanaImage} alt='Iguana Image'></img></button></Link>
             </p>
-            <br></br>
+            {/* <br></br>
             <p>
                 <button className='charity-box'><img src={STCImg} alt='STC'></img></button>
-            </p>
+            </p> */}
         </div>
     </div>
     )
